@@ -1,7 +1,9 @@
 import {Component} from '@angular/core';
+import {DashboardComponent} from './dashboard_layout/dashboard.component'
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: '<dashboard-layout></dashboard-layout>',
+    directives: [DashboardComponent]
 })
 export class AppComponent { }
